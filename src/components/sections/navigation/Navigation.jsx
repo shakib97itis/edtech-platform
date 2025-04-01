@@ -26,7 +26,6 @@ function Navigation() {
       <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
         <div className="font-primary relative container mx-auto flex items-center justify-between px-[16px] py-[12px] md:px-[40px]">
           {/* MAIN LOGO AND HAMBURGER BUTTON */}
-
           <div className="flex items-center gap-[20px]">
             {/* Hamburger Button (Mobile) */}
             <div className="flex items-center lg:hidden">
@@ -46,11 +45,8 @@ function Navigation() {
           <div className="hidden items-center justify-between lg:flex">
             <ul className="flex gap-[20px]">
               {navItems.map((item) => (
-                <li
-                  key={item.name}
-                  className="hover:text-secondary-300 font-primary text-base font-medium text-neutral-800 transition duration-300 ease-in-out"
-                >
-                  <a href={item.path}>{item.name}</a>
+                <li key={item.name} className="">
+                  <NavLink text={item.name} path={item.path} />
                 </li>
               ))}
             </ul>
@@ -87,12 +83,7 @@ function Navigation() {
             <ul className="mt-[20px] flex flex-col gap-[26px] px-[16px]">
               {navItems.map((item) => (
                 <li key={item.name} className="">
-                  <a
-                    className="hover:text-secondary-300 font-primary text-base font-medium text-neutral-800 transition duration-300 ease-in-out"
-                    href={item.path}
-                  >
-                    {item.name}
-                  </a>
+                  <NavLink text={item.name} path={item.path} />
                 </li>
               ))}
             </ul>
