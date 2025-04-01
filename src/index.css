@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-400: #0786c0;
+  --color-primary-700: #014463;
+  --color-primary-800: #004464;
+  --color-secondary-300: #a6e2e2;
+  --color-accent-500: #f97316;
+  --color-accent-600: #f15b2d;
+  --color-neutral-50: #f3f4f6;
+  --color-neutral-100: #e5e7eb;
+  --color-neutral-200: #cccccc;
+  --color-neutral-300: #c1c1c1;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #242424;
+  --color-neutral-900: #111827;
+  --color-neutral-950: #0d0d0d;
+
+  --color-white: #ffffff;
+
+  /* Font System */
+  --font-primary: "Ubuntu", "sans-serif";
+  --font-secondary: "Syne", "sans-serif";
+}
