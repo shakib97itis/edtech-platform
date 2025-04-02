@@ -1,5 +1,12 @@
 # Notes
 
+
+## general notes
+
+- Make the color and font variables names generic so it can be reused anywhere.
+- kepp image import variable generic.
+
+
 ## Things i found notes
 
 - They are using swiper library for all carrousel.
@@ -15,7 +22,8 @@
 - (done) How am I going to build carrousel?
 - (dont) What the font sizes of the website?
 - (done) Create the navBar.
-- Make the navbar a reuseable component.
+- () Make the navbar a reuseable component.
+- () Create Reuseable button.
 
 - How they are doing the card animation - (related to on scroll reveal animation)?
 - how the navbar is built?
@@ -176,4 +184,9 @@ src/
 - (done) Create a signup button on the right side.
 - (done) Implement the slide functionality.
 - () Make all the nav elements reuseable.
-- discuss on what is the most efficient way to build navbar?
+- discuss on what is the most efficient way to build navbar/component?
+
+### Reuseable Btn
+
+- There are five diffrent varient of button component.
+- We will be using btnType prop for indicate.
