@@ -2,6 +2,7 @@ import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LuUserRoundPlus } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
+import NavLink from "./NavLink";
 
 import logo from "../../../assets/LogoMain.png";
 
@@ -27,15 +28,15 @@ function Navigation() {
         <div className="font-primary relative container mx-auto flex items-center justify-between px-[16px] py-[12px] md:px-[40px]">
           {/* MAIN LOGO AND HAMBURGER BUTTON */}
           <div className="flex items-center gap-[20px]">
-            {/* Hamburger Button (Mobile) */}
+            {/* HAMBURGER BUTTON (Mobile) */}
             <div className="flex items-center lg:hidden">
               <RxHamburgerMenu
                 className="text-primary-500 translate-y-[3px] cursor-pointer text-2xl"
                 onClick={toggleNav}
               />
             </div>
-
-            {/* Logo */}
+            
+            {/* LOGO */}
             <div className="w-[120px] lg:w-[150px]">
               <img src={logo} alt="Logo" className="full" />
             </div>
