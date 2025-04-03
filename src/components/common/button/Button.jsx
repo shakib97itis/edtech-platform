@@ -30,22 +30,20 @@ function Button({ children, text, variant, className }) {
     btnOne:
       "bg-accent-500 hover:border-accent-600 hover:bg-accent-600 border-accent-500 border-2 px-4 py-2 text-white",
     btnTwo:
-      "hover:bg-accent-600 border-accent-500 bg-accent-500 border-2 px-[20px] py-[10px] text-white",
+      "border-accent-500 text-accent-500 border hover:border-transparent hover:bg-[#FDE6E0]",
     btnThree:
-      "border-accent-500 text-accent-500 border px-[20px] py-[10px] hover:border-transparent hover:bg-[#FDE6E0]",
+      "border-accent-500 text-accent-500 hover:text-accent-600 border-2 bg-transparent  hover:border-[#FDE6E0] hover:bg-[#FDE6E0]",
     btnFour:
-      "border-accent-500 text-accent-500 hover:text-accent-600 border-2 bg-transparent px-[20px] py-[10px] hover:border-[#FDE6E0] hover:bg-[#FDE6E0]",
+      "border-2 border-transparent bg-[#004464]  text-white hover:bg-[#29BDBF]",
     btnFive:
-      "border-2 border-transparent bg-[#004464] px-[20px] py-[10px] text-white hover:bg-[#29BDBF]",
-    btnSix:
-      "border-2 border-transparent px-[10px] py-[5px] text-[#004464] hover:border-[#B0C5CF] hover:bg-[#36BBE4] hover:text-white",
+      "border-2 border-transparent text-[#004464] hover:border-[#B0C5CF] hover:bg-[#36BBE4] hover:text-white",
   };
 
   // const baseStyles = "";
 
   return (
     <button
-      className={`font-primary flex cursor-pointer items-center justify-center gap-[10px] rounded-full font-medium transition duration-300 ease-in-out ${variantStyles[variant]} ${className}`}
+      className={`${className} font-primary flex cursor-pointer items-center justify-center gap-[10px] rounded-full font-medium transition duration-300 ease-in-out ${variantStyles[variant]}`}
     >
       <span className="text-inherit">{text}</span>
       {children ? <span className="text-inherit">{children}</span> : ""}
@@ -54,7 +52,6 @@ function Button({ children, text, variant, className }) {
 }
 
 Button.propTypes = {
-  Icon: PropTypes.element,
   text: PropTypes.string,
   variant: PropTypes.oneOf([
     "btnOne",
