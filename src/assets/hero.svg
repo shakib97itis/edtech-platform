@@ -1,0 +1,35 @@
+<svg class="w-[400px] md:w-[600px] lg:w-[881px]" height="590" viewBox="0 0 881 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.5 589H608.782L635.752 570H748" stroke="white" stroke-opacity="0.05" stroke-width="2"></path>
+  <path d="M2.5 589H608.782L635.752 570H748" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="1000" stroke-dashoffset="0"></path>
+  <circle cx="755" cy="570" r="7" fill="white" fill-opacity="0.06493627740273951"></circle>
+  <line x1="-8.74228e-08" y1="555" x2="867" y2="555" stroke="white" stroke-opacity="0.05" stroke-width="2"></line>
+  <line x1="0" y1="555" x2="867" y2="555" stroke="white" stroke-opacity="0.4" stroke-width="2"></line>
+  <circle cx="873" cy="556" r="6" stroke="white" stroke-opacity="0.22794123377098002"></circle>
+  <rect x="752" y="506" width="9" height="36" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="771" y="496" width="9" height="46" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="791" y="506" width="9" height="36" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="811" y="506" width="9" height="36" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="830" y="506" width="9" height="36" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="850" y="506" width="9" height="36" fill="white" opacity="0.04999999999999999"></rect>
+  <path d="M0 532L687 532" stroke="white" stroke-opacity="0.1" stroke-width="2"></path>
+  <path d="M0 532L687 532" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="1000" stroke-dashoffset="0"></path>
+  <circle cx="693" cy="531" r="7" fill="white" fill-opacity="0.38470597403356804"></circle>
+  <rect x="552" y="525" width="113" height="14" fill="white" opacity="0.05" transform-origin="608.5px 531.9999995231628px" style="transform: translateX(-515.073px); transform-origin: 608.5px 532px;"></rect>
+  <rect x="781" y="68" width="22" height="22" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="821" y="68" width="22" height="22" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="859" y="68" width="22" height="22" fill="white" opacity="0.04999999999999999"></rect>
+  <rect x="859" y="106" width="22" height="22" fill="white" opacity="0.04999999999999999"></rect>
+  <path d="M0 45H611.745L626.649 68H747.964" stroke="white" stroke-opacity="0.05" stroke-width="2"></path>
+  <path d="M0 45H611.745L626.649 68H747.964" stroke="white" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="1000" stroke-dashoffset="0"></path>
+  <ellipse cx="754.982" cy="68" rx="7.01818" ry="7" fill="white" fill-opacity="0.41772584937280044"></ellipse>
+  <line x1="1" y1="24.5" x2="556" y2="24.5" stroke="white" stroke-opacity="0.05" stroke-width="2"></line>
+  <line x1="0" y1="24.5" x2="556" y2="24.5" stroke="white" stroke-opacity="0.3" stroke-width="2"></line>
+  <ellipse cx="561.964" cy="24" rx="7.03646" ry="7" fill="white" fill-opacity="0.22794123377098002"></ellipse>
+  <path d="M568.5 24C568.5 27.5874 565.576 30.5 561.964 30.5C558.351 30.5 555.427 27.5874 555.427 24C555.427 20.4126 558.351 17.5 561.964 17.5C565.576 17.5 568.5 20.4126 568.5 24Z" stroke="white" stroke-opacity="0.22794123377098002"></path>
+  <line x1="1" y1="7" x2="700" y2="7.00006" stroke="white" stroke-opacity="0.05" stroke-width="2"></line>
+  <line x1="0" y1="7" x2="700" y2="7.00006" stroke="white" stroke-opacity="0.3" stroke-width="2"></line>
+  <ellipse cx="706.979" cy="7" rx="7.02077" ry="7" fill="white" fill-opacity="0.22794123377098002"></ellipse>
+  <path d="M713.5 7C713.5 10.5885 710.582 13.5 706.979 13.5C703.377 13.5 700.458 10.5885 700.458 7C700.458 3.41154 703.377 0.5 706.979 0.5C710.582 0.5 713.5 3.41154 713.5 7Z" stroke="white" stroke-opacity="0.22794123377098002"></path>
+  <rect x="585.62" width="92.273" height="14" fill="white" opacity="0.05" transform-origin="631.7564964294434px 6.999999523162842px" style="transform: translateX(-528.509px); transform-origin: 631.756px 7px;"></rect>
+  <rect x="586.12" y="0.5" width="91.273" height="13" fill="white" opacity="0.05" transform-origin="631.7564964294434px 7px" style="transform: translateX(-528.509px); transform-origin: 631.756px 7px;"></rect>
+</svg>
