@@ -1,11 +1,9 @@
 # Notes
 
-
 ## general notes
 
 - Make the color and font variables names generic so it can be reused anywhere.
 - kepp image import variable generic.
-
 
 ## Things i found notes
 
@@ -22,8 +20,9 @@
 - (done) How am I going to build carrousel?
 - (dont) What the font sizes of the website?
 - (done) Create the navBar.
-- () Make the navbar a reuseable component.
-- () Create Reuseable button.
+- (done) Make the navbar a reuseable component.
+- (done) Create Reuseable button.
+- () Initial stracture of the landing page.
 
 - How they are doing the card animation - (related to on scroll reveal animation)?
 - how the navbar is built?
@@ -75,7 +74,7 @@
 ### Common Components
 
 - Btn
-  -- There are five diffrent varient of button component.
+  -- There are five different variant of button component.
   -- We will be using btnType prop for indicate.
 - AppBtn
 - SliderNavBtn.
@@ -107,7 +106,7 @@
   -- HeroSlider -> HeroSlide
 - WhatWeDoSection
 - HowItWorksSection
-- OutProgramsSection
+- OurProgramsSection
 - CommunitySection
 - PartnersSection
   -- plan it later.
@@ -121,6 +120,34 @@
 
 - CtaSection
 - FooterSection
+
+## Component Notes
+
+### Navbar (done)
+
+- (done) We need an object for navigation list.
+- (done) On the top left create a hamburger button and Main logo.
+- (done) Create seperate navbar for mobile and desktop.
+- (done) Create a signup button on the right side.
+- (done) Implement the slide functionality.
+- (done) Make all the nav elements reuseable.
+- discuss on what is the most efficient way to build navbar/component?
+
+### Reuseable Btn (done)
+
+- There are five diffrent varient of button component.
+- We will be using btnType prop for indicate.
+
+### Ours Programs section
+
+- Create the initial stracture of the section
+  - Section has a heading secondary which is reuseable.
+  - Section has program card, which is reuseable.
+- Tasks:
+  - Create overall layout of the project.
+  - Create the headingSecondary section.
+  - Create the program cart
+
 
 ## project structure
 
@@ -173,20 +200,3 @@ src/
   - Theme variants
   - Menu configurations
 - Tailwind-powered animation framework
-
-## Component Notes
-
-### Navbar
-
-- (done) We need an object for navigation list.
-- (done) On the top left create a hamburger button and Main logo.
-- (done) Create seperate navbar for mobile and desktop.
-- (done) Create a signup button on the right side.
-- (done) Implement the slide functionality.
-- () Make all the nav elements reuseable.
-- discuss on what is the most efficient way to build navbar/component?
-
-### Reuseable Btn
-
-- There are five diffrent varient of button component.
-- We will be using btnType prop for indicate.
