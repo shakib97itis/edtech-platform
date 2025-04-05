@@ -4,12 +4,19 @@
 @import "tailwindcss";
 
 @theme {
+  --color-primary-300: #36bbe4;
   --color-primary-400: #0786c0;
   --color-primary-700: #014463;
   --color-primary-800: #004464;
+
+  --color-secondary-200: #b0c5cf;
   --color-secondary-300: #a6e2e2;
+  --color-secondary-400: #29bdbf;
+
+  --color-accent-400: #ffccbc;
   --color-accent-500: #f97316;
   --color-accent-600: #f15b2d;
+
   --color-neutral-50: #f3f4f6;
   --color-neutral-100: #e5e7eb;
   --color-neutral-200: #cccccc;
