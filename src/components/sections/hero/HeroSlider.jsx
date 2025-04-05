@@ -1,8 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import HeroBanner from "./HeroBanner";
+import HeroBanner1 from "./HeroBanner1";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,17 +20,10 @@ const HeroSlider = () => {
         disableOnInteraction: false,
       }}
       loop={true}
-      className="h-[600px] w-full bg-[#0a3a47]"
+      className="bg-primary-700 h-[600px] w-full"
     >
-      {/* Slide 1 */}
-      <SwiperSlide>
-        <HeroBanner />
-      </SwiperSlide>
-      <SwiperSlide>
-        <HeroBanner />
-      </SwiperSlide>
-      <SwiperSlide>
-        <HeroBanner />
+      <SwiperSlide className="h-full">
+        <HeroBanner1 />
       </SwiperSlide>
     </Swiper>
   );

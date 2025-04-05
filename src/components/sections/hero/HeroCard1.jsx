@@ -1,6 +1,6 @@
 const CardComponent = () => {
   return (
-    <div className="relative cursor-pointer rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 hover:bg-white hover:shadow-md hover:shadow-[#2FB8E9]">
+    <div className="hover:shadow-primary-200 relative cursor-pointer rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 hover:bg-white hover:shadow-md">
       <div className="absolute inset-x-0 top-0 mx-auto flex h-28 w-28 -translate-y-1/2 transform items-center justify-center rounded-full border-8 border-sky-800 shadow-lg shadow-white">
         <div className="bg-primary-800 flex h-24 w-24 items-center justify-center rounded-full border-2 border-white p-4">
           <MySVG />
@@ -52,7 +52,14 @@ const MySVG = () => {
         strokeLinejoin="round"
       />
       <defs>
-        <linearGradient id="paint0_linear" x1="42.0001" y1="30.5996" x2="42.0001" y2="53.3996" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="paint0_linear"
+          x1="42.0001"
+          y1="30.5996"
+          x2="42.0001"
+          y2="53.3996"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#F15B2D" />
           <stop offset="1" stopColor="#F15B2D" stopOpacity="0" />
         </linearGradient>
@@ -60,5 +67,3 @@ const MySVG = () => {
     </svg>
   );
 };
-
-
