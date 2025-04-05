@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LuUserRoundPlus } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
+import Button from "../../common/button/Button";
 import NavLink from "./NavLink";
 
-import logo from "../../../assets/LogoMain.png";
-
 function Navigation() {
-  const [isNavOpen, setIsNavOpen] = React.useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -35,10 +34,10 @@ function Navigation() {
                 onClick={toggleNav}
               />
             </div>
-            
+
             {/* LOGO */}
             <div className="w-[120px] lg:w-[150px]">
-              <img src={logo} alt="Logo" className="full" />
+              <img src="/logo-main.png" alt="Logo" className="full" />
             </div>
           </div>
 
@@ -55,12 +54,13 @@ function Navigation() {
 
           {/* NAVIGATION CTA BUTTON */}
           <div>
-            <button className="bg-accent-500 font-primary hover:bg-accent-600 flex cursor-pointer items-center justify-center gap-[10px] rounded-full px-[16px] py-[8px] font-medium text-white transition duration-300 ease-in-out">
-              <span className="text-inherit">Sign In</span>
-              <span>
-                <LuUserRoundPlus className="text-inherit" />
-              </span>
-            </button>
+            <Button
+              text="Sign In"
+              variant="btnOne"
+              className="px-[16px] py-[8px]"
+            >
+              <LuUserRoundPlus />
+            </Button>
           </div>
 
           {/* MOBILE NAVIGATION */}
@@ -71,7 +71,7 @@ function Navigation() {
           >
             <div className="flex items-center justify-between border-b border-b-neutral-100 px-4 py-4 pb-4">
               <div className="">
-                <img src={logo} alt="Logo" className="w-32" />
+                <img src="/main-logo.png" alt="Logo" className="w-32" />
               </div>
               <div
                 className="items-centet flex cursor-pointer justify-center"
