@@ -24,7 +24,7 @@ const Banner = () => {
           Skills Development project for the ever-changing workforce of
           Bangladesh.
         </p>
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex flex-col gap-4 md:flex-row">
           <Button
             variant="btnOne"
             text="Enroll Now"

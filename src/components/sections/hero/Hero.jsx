@@ -15,7 +15,7 @@ function Hero() {
       </section>
       {/* ===== HERO CARDS ===== */}
       <section>
-        <div className="relative z-10 container mx-auto -mt-[50px] grid grid-cols-1 gap-4 px-[16px] md:-mt-[150px] md:grid-cols-2 md:px-[40px] lg:grid-cols-3">
+        <div className="relative z-10 container mx-auto -mt-[50px] grid grid-cols-1 gap-y-[80px] px-[16px] md:-mt-[150px] md:grid-cols-2 md:px-[40px] lg:grid-cols-3 md:gap-x-[16px]">
           <HeroCard1 />
           <HeroCard1 />
           <HeroCard1 />
