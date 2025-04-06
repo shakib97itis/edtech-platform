@@ -1,77 +1,141 @@
-# Notes
+# Project Notes
 
-## general notes
+## Project Setup & Systems
 
-- Make the color and font variables names generic so it can be reused anywhere.
-- kepp image import variable generic.
+### Design Systems
 
-## Things i found notes
+- **Colors**
 
-- They are using swiper library for all carrousel.
-- in the hero section there is a svg. (download it).
-- There is a lot of on scroll reveal animation on the landing page.
+  - Primary: #014463, #004464, #0786C0
+  - Secondary: #A6E2E2
+  - Accent: #F97316, #F15B2D
+  - Neutral: Various shades from #111827 to #FFFFFF
 
-## TODO - Things to figure out and build
+- **Typography**
 
-- (done) What are the coloures they are using? Make a color system.
-- (done) What are the fonts they are using? Make a font system.
-- (done) what are the libraty the are using? Take notes of libraty.
-- (done) Setup breakpoints of the website?
-- (done) How am I going to build carrousel?
-- (dont) What the font sizes of the website?
-- (done) Create the navBar.
-- (done) Make the navbar a reuseable component.
-- (done) Create Reuseable button.
-- () Initial stracture of the landing page.
+  - Primary: Ubuntu
+  - Secondary: Syne
 
-- How they are doing the card animation - (related to on scroll reveal animation)?
-- how the navbar is built?
-- What are the reuseable component i can built?
-- how to do -> on scroll reveal animation react?
+- **Responsive Design**
+  - Mobile-first approach
+  - Using Tailwind default breakpoints
 
-## responsivenes
+### Required Libraries
 
-- we are approaching mobile first method.
-- we are going to use tailwind default breakpoints.
+- React
+- Tailwind CSS
+- Swiper (for carousels)
 
-## Library needed >
+### Project Structure
 
-- React.
-- Tailwind for style.
-- Swiper - for carrousel.
+```
+src/
+├── components/
+│   ├── common/
+│   └── sections/
+└── pages/
+```
 
-## fonts system
-
-- Primary font: Ubuntu
-- Secondary font: Syne
-
-## color system
-
-- Primary:
-  -- #014463
-  -- #004464
-  -- #0786C0
-- Secondary:
-  -- #A6E2E2
-- Accent:
-  -- #F97316
-  -- #F15B2D
-- Natural:
-  -- #111827
-  -- #6B7280
-  -- #E5E7EB
-  -- #F3F4F6
-  -- #374151
-  -- #4B5563
-  -- #0D0D0D
-  -- #242424
-  -- #C1C1C1
-  -- #CCCCCC
-  -- #FFFFFF
-
-## Component list
+## Components Architecture
 
 ### Common Components
+
+1. **Buttons**
+
+   - Standard Button (4 variants)
+   - SliderNavButton
+   - SocialButton
+
+2. **Cards**
+   - HeroCard
+   - HowItWorkCard
+   - ProgramsCard
+   - CommunityCard
+   - TestimonialsCard
+   - FeaturedCard
+
+### Section Components
+
+- Navigation
+- Hero
+  - HeroSlider
+  - HeroBanner1
+  - HeroBanner2
+  - HeroBanner3
+  - HeroBanner4
+  - HeroCard
+- WhatWeDo
+- HowItWorks
+- OurPrograms
+- Community
+- Partners
+- Testimonials
+- LatestNews
+- FeaturedNews
+- CTA
+- Footer
+
+## Implementation Progress
+
+### Completed
+
+- [x] Color system
+- [x] Font system
+- [x] Library selection
+- [x] Breakpoints setup
+- [x] Navbar component
+- [x] Carousel implementation
+- [x] Reusable button component
+- [x] Built the initial stracture of the project
+
+### In Progress
+
+- [x] Refactor Button component.
+- [x] Refactor Navigation component.
+- [x] Refactor Hero section component.
+- [x] Refactor WhatWeDo component.
+
+- [ ] Refactor HowItWorks component.
+- [ ] Refactor OurPrograms component.
+- [ ] Refactor Community component.
+- [ ] Refactor FeaturedNews component.
+- [ ] Refactor CTA component.
+- [] Refactor Footer component.
+
+- [] Build Partners component.
+- [ ] Build Testimonials component.
+- [ ] Build LatestNews component.
+
+- [ ] Refactor Heading component.
+
+- [ ] Card animation implementation
+- [ ] Scroll reveal animations
+
+### Development Notes
+
+- Keep color and font variable names generic
+- Maintain generic image import variables
+- Implement scroll reveal animations throughout
+- Use Swiper library for all carousels
+- Download hero section SVG
+
+### Refactor WhatWeDo component.
+
+## Daily Progress
+
+### Day 1: Foundation
+
+- Set responsive design strategy
+- Established design system
+- Created directory structure
+
+### Day 2: Navigation
+
+- Implemented responsive navigation
+- Created dynamic state management
+- Added transition animations
+
+<!-- notes stash -->
 
 - Btn
   -- There are five different variant of button component.
@@ -98,105 +162,3 @@
   -- props - backgroundColor.
 - TestimonialCard
   -- props => testimonial, name, degignation, image,
-
-### Sections Components
-
-- NavigationSection
-- HeroSection
-  -- HeroSlider -> HeroSlide
-- WhatWeDoSection
-- HowItWorksSection
-- OurProgramsSection
-- CommunitySection
-- PartnersSection
-  -- plan it later.
-  -- router will be used for tab.
-  -- slide component will be reuseable.
-- TestimonialSection
-- LatestNewsSection
-  -- we will build it right here.
-
-- ## FeaturedNewsSection
-
-- CtaSection
-- FooterSection
-
-## Component Notes
-
-### Navbar (done)
-
-- (done) We need an object for navigation list.
-- (done) On the top left create a hamburger button and Main logo.
-- (done) Create seperate navbar for mobile and desktop.
-- (done) Create a signup button on the right side.
-- (done) Implement the slide functionality.
-- (done) Make all the nav elements reuseable.
-- discuss on what is the most efficient way to build navbar/component?
-
-### Reuseable Btn (done)
-
-- There are five diffrent varient of button component.
-- We will be using btnType prop for indicate.
-
-### Ours Programs section
-
-- Create the initial stracture of the section
-  - Section has a heading secondary which is reuseable.
-  - Section has program card, which is reuseable.
-- Tasks:
-  - Create overall layout of the project.
-  - Create the headingSecondary section.
-  - Create the program cart
-
-
-## project structure
-
-```
-src/
-├── components/
-│   ├── common/
-│   │   ├── Button/
-│   │   │   ├── Button.jsx
-│   │   │   └── Button.css
-│   │   ├── Card/
-│   │   ├── Navbar/
-│   │   └── Footer/
-│   └── sections/
-│       ├── Navigation/
-│       ├── Hero/
-│       └── Testimonials/
-├── pages/
-│   ├── HomePage.jsx
-│   ├── AboutPage.jsx
-│   ├── AboutPage.jsx
-│   └── ContactPage.jsx
-|
-```
-
-## Working progress -
-
-### Day 1: Project Foundation & System Design
-
-✅ **Completed**:
-
-- Responsive design strategy for all device breakpoints
-- Core feature set and user flow mapping
-- Design system foundations:
-  - Color palette with semantic hierarchy
-  - Typography system (Inter + Roboto)
-- Scalable directory structure
-
----
-
-### Day 2: Core Navigation Implementation
-
-🚀 **Successfuly Developed**:
-
-- Reusable navigation component featuring:
-  - Mobile-first responsive layout
-  - Dynamic state management
-  - Transition animations
-- Prop-based customization system for:
-  - Theme variants
-  - Menu configurations
-- Tailwind-powered animation framework
