@@ -5,6 +5,7 @@ import {
   FaFacebook,
   FaPinterest,
   FaYoutube,
+  FaArrowRight,
 } from "react-icons/fa";
 
 import logo from "../../../assets/Footer_logo.png";
@@ -86,17 +87,20 @@ const Footer = () => {
           <div className="mt-10 md:ml-10 lg:mt-3">
             <h6 className="text-lg font-medium">QUICK LINKS</h6>
             <div className="my-2 h-0.5 w-10 bg-orange-500"></div>
-            <div className="mt-5 space-y-3">
+            <ul className="mt-5 space-y-3 text-accent-500">
               {quickLinks.map(({ href, label }) => (
-                <a
-                  key={href}
-                  href={href}
-                  className="block text-orange-500 hover:text-yellow-500"
-                >
-                  {label}
-                </a>
+                <li key={label} className="flex items-center gap-2">
+                  <FaArrowRight />
+                  <a
+                    key={href}
+                    href={href}
+                    className="block text-orange-500 hover:text-yellow-500"
+                  >
+                    {label}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
           {/* App Download */}
