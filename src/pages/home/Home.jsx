@@ -1,18 +1,15 @@
-import Button from "../../components/common/button/Button";
+import React from "react";
 import Community from "../../components/sections/community/Community";
-import { FaArrowCircleRight, FaExclamationCircle } from "react-icons/fa";
 import Hero from "../../components/sections/hero/Hero";
 import HowDoesItWork from "../../components/sections/howDoesItWork/HowDoesItWork";
 import Navigation from "../../components/sections/navigation/Navigation";
 import OurPrograms from "../../components/sections/ourPrograms/OurPrograms";
 import WhatWeDo from "../../components/sections/whatWeDo/WhatWeDo";
-import { BsPersonFillAdd } from "react-icons/bs";
-import Testimonials from "../../components/sections/testimonials/Testimonials";
-import TestimonialCard from "../../components/sections/testimonials/TestimonialCard";
 import LatestNews from "../../components/sections/latestNews/LatestNews";
 import CtaSection from "../../components/sections/ctaSection/CtaSection";
 import Footer from "../../components/sections/footer/Footer";
-import TabbedSlider from "../../components/sections/tabbedComponent/tabbedSlider";
+import OurPartners from "../../components/sections/ourPartners/OurPartners";
+import TestimonialCard from "../../components/sections/testimonials/TestimonialCard";
 
 const Home = () => {
   return (
@@ -36,19 +33,17 @@ const Home = () => {
       <Community />
 
       {/* OUR PARTNERS SECTION */}
-      <section>
-        <div className="container mx-auto px-[16px] md:px-[40px]">
-          <h1>Heading goes here</h1>
-          <div className="py-[20px]">
-            <TabbedSlider />
-          </div>
-        </div>
-      </section>
+      <OurPartners />
 
       {/* TESTIMONIAL SECTION */}
-      {/* <div className="flex justify-center pt-[100px]">
-<TestimonialCard text="Testimonial text goes here" image="" name="" role="" />
-</div> */}
+      <div className="flex justify-center pt-[100px]">
+        <TestimonialCard
+          text="Testimonial text goes here"
+          image=""
+          name=""
+          role=""
+        />
+      </div>
 
       {/* LATEST NEWS */}
       <LatestNews />
@@ -60,7 +55,7 @@ const Home = () => {
       <Footer />
 
       {/* BUTTONS DEMO */}
-      <div className="p-[10px]">
+      {/* <div className="p-[10px]">
         <Button
           variant={"btnOne"}
           text={"Button One"}
@@ -98,7 +93,7 @@ const Home = () => {
         >
           <FaArrowCircleRight />
         </Button>
-      </div>
+      </div> */}
     </>
   );
 };
