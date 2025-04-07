@@ -14,7 +14,6 @@ function Button({ children, text, variant, className }) {
   const variantStyles = {
     btnOne:
       "bg-accent-500 hover:border-accent-600 hover:bg-accent-600 border-accent-500 mb-1 border-2 text-white",
-    // Border width should be provided by classname.
     btnTwo:
       "border-accent-500 text-accent-500 hover:bg-accent-400 hover:border-accent-400 border bg-transparent",
     btnThree:
@@ -25,7 +24,7 @@ function Button({ children, text, variant, className }) {
 
   return (
     <button
-      className={`${className} font-primary flex cursor-pointer items-center justify-center gap-[10px] rounded-full font-medium transition duration-300 ease-in-out ${variantStyles[variant]}`}
+      className={`${className} text-base font-primary flex cursor-pointer items-center justify-center gap-[10px] rounded-full font-medium transition duration-300 ease-in-out ${variantStyles[variant]}`}
     >
       <span className="text-inherit">{text}</span>
       {children ? <span className="text-inherit">{children}</span> : ""}
