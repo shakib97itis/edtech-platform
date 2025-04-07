@@ -7,9 +7,9 @@ const Banner = () => {
   return (
     <section className="bg-primary-700 flex h-full items-center justify-center gap-[10px] px-10 py-10 md:px-20 lg:px-32">
       {/* Text Section */}
-      <div className="w-full md:w-3/5">
+      <div className="w-full lg:w-3/5">
         <h3 className="text-sm text-white uppercase opacity-75">Elevating</h3>
-        <h1 className="mt-2 text-3xl leading-tight font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="mt-2 text-3xl leading-tight font-bold text-white sm:text-4xl md:text-5xl">
           IT Service Industry <br /> with{" "}
           <span className="relative inline-block">
             Digital Skills
@@ -24,7 +24,7 @@ const Banner = () => {
           Skills Development project for the ever-changing workforce of
           Bangladesh.
         </p>
-        <div className="mt-6 flex flex-col gap-4 md:flex-row">
+        <div className="mt-6 flex flex-col gap-4 sm:flex-row">
           <Button
             variant="btnOne"
             text="Enroll Now"
