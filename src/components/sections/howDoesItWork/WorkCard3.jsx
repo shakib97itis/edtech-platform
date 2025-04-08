@@ -4,7 +4,7 @@ const WorkCard = () => {
     <div
       className={`relative -ml-60 h-[702px] w-[590px] md:-ml-72`}
       style={{
-        backgroundImage: `url(/workcard-shadow.svg)`,
+        backgroundImage: `url(/howDoesItWorksImages/workcard-shadow.svg)`,
         zIndex: 10,
       }}
     >
@@ -35,7 +35,7 @@ const WorkCard = () => {
           height="165"
           decoding="async"
           className="mx-auto -mt-8 object-center"
-          src="/number3.png"
+         src="/public/howDoesItWorksImages/number3.png"
         />
       </div>
       <div
