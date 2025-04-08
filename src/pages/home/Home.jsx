@@ -10,6 +10,8 @@ import CtaSection from "../../components/sections/ctaSection/CtaSection";
 import Footer from "../../components/sections/footer/Footer";
 import OurPartners from "../../components/sections/ourPartners/OurPartners";
 import TestimonialCard from "../../components/sections/testimonials/TestimonialCard";
+import Testimonials from "../../components/sections/testimonials/Testimonials";
+import FeaturedNews from "../../components/sections/featuredNews/FeaturedNews";
 
 const Home = () => {
   return (
@@ -36,64 +38,19 @@ const Home = () => {
       <OurPartners />
 
       {/* TESTIMONIAL SECTION */}
-      <div className="flex justify-center pt-[100px]">
-        <TestimonialCard
-          text="Testimonial text goes here"
-          image=""
-          name=""
-          role=""
-        />
-      </div>
+      <Testimonials />
 
       {/* LATEST NEWS */}
       <LatestNews />
+
+      {/* FEATURED NEWS */}
+      <FeaturedNews />
 
       {/* CTA SECTION */}
       <CtaSection />
 
       {/* FOOTER SECTION */}
       <Footer />
-
-      {/* BUTTONS DEMO */}
-      {/* <div className="p-[10px]">
-        <Button
-          variant={"btnOne"}
-          text={"Button One"}
-          className="px-[30px] py-[8px]"
-        >
-          <BsPersonFillAdd />
-        </Button>
-
-        <Button
-          variant={"btnTwo"}
-          text={"Button Two"}
-          className="mb-1 px-[20px] py-[10px]"
-        >
-          <FaExclamationCircle />
-        </Button>
-
-        <Button
-          variant={"btnTwo"}
-          text={"Button Two V1"}
-          className="mb-1 border-2 px-[30px] py-[8px]"
-        ></Button>
-
-        <Button
-          variant={"btnThree"}
-          text={"Button Three"}
-          className="mb-1 px-[20px] py-[10px]"
-        >
-          <FaArrowCircleRight />
-        </Button>
-
-        <Button
-          variant={"btnFour"}
-          text={"Button Four"}
-          className="mb-1 px-[10px] py-[5px]"
-        >
-          <FaArrowCircleRight />
-        </Button>
-      </div> */}
     </>
   );
 };
