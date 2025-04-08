@@ -7,14 +7,16 @@ const CommunitySection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('office-photo.jpg')",
+          backgroundImage: "url('/communityImages/office-photo.jpg')",
           opacity: 0.2,
           backgroundAttachment: "fixed",
         }}
       ></div>
       <div className="relative z-10 container mx-auto px-[24px] md:px-[40px]">
         <div className="mb-[50px]">
-          <HeadingSecondaryLeft className="mb-[50px]">Our Community</HeadingSecondaryLeft>
+          <HeadingSecondaryLeft className="mb-[50px]">
+            Our Community
+          </HeadingSecondaryLeft>
 
           <p className="text-neutral-350 max-w-2xl">
             Bulipe Tech aims to train unemployed individuals in Bangladesh,
