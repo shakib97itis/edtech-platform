@@ -14,10 +14,10 @@ function WhatWeDo() {
         <div className="bg-secondary-300 flex flex-col lg:flex-row">
           {/* CONTENT LEFT */}
           <div className="w-full p-[30px] lg:w-[40%]">
-            <h3 className="mb-[20px] text-[20px] leading-[32px] font-medium lg:text-[24px]">
+            <h3 className="mb-[20px] text-[20px] leading-normal font-medium lg:text-[24px]">
               Bulipe Tech is a dynamic and innovative company
             </h3>
-            <p className="mb-6 text-[16px] leading-[1.8] lg:text-[18px]">
+            <p className="mb-[40px] text-[14px] leading-normal lg:text-base">
               We empower individuals to unlock career opportunities through our
               proven Digital Skill Development program. Partnering with 300
               local organisations and 3,000+ global partners in 21 countries, we
@@ -33,7 +33,7 @@ function WhatWeDo() {
 
             <Button
               text="Read More"
-              variant="btnFour"
+              variant="btnThree"
               className="px-[20px] py-[10px]"
             >
               <FaArrowCircleRight />
@@ -41,11 +41,10 @@ function WhatWeDo() {
           </div>
 
           {/* CONTENT RIGHT */}
-          <div className="w-full bg-amber-500 lg:w-[60%]">
-            {/* <div>hello</div> */}
+          <div className="w-full lg:w-[60%]">
             <img
               src="/what-we-do.png"
-              alt=""
+              alt="What We Do"
               className="h-full w-full object-cover"
             />
           </div>
