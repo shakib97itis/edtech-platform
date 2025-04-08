@@ -22,9 +22,10 @@ function Navigation() {
   ];
 
   return (
-    <section className="mb-[69px]">
-      <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
-        <div className="font-primary relative container mx-auto flex items-center justify-between px-[16px] py-[12px] md:px-[40px]">
+    <section className="font-primary mb-[69px]">
+      <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-sm">
+        {/* Why position relative? */}
+        <div className="relative container mx-auto flex items-center justify-between px-[16px] py-[12px] md:px-[40px]">
           {/* MAIN LOGO AND HAMBURGER BUTTON */}
           <div className="flex items-center gap-[20px]">
             {/* HAMBURGER BUTTON (Mobile) */}
@@ -42,15 +43,13 @@ function Navigation() {
           </div>
 
           {/* DESKTOP NAVIGATION */}
-          <div className="hidden items-center justify-between lg:flex">
-            <ul className="flex gap-[20px]">
-              {navItems.map((item) => (
-                <li key={item.name} className="">
-                  <NavLink text={item.name} path={item.path} />
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className="hidden items-center gap-[20px] lg:flex">
+            {navItems.map((item) => (
+              <li key={item.name} className="">
+                <NavLink text={item.name} path={item.path} />
+              </li>
+            ))}
+          </ul>
 
           {/* NAVIGATION CTA BUTTON */}
           <div>
@@ -69,9 +68,9 @@ function Navigation() {
               isNavOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <div className="flex items-center justify-between border-b border-b-neutral-100 px-4 py-4 pb-4">
+            <div className="flex items-center justify-between border-b border-b-neutral-100 p-4">
               <div className="">
-                <img src="/main-logo.png" alt="Logo" className="w-32" />
+                <img src="/logo-main.png" alt="Logo" className="w-32" />
               </div>
               <div
                 className="items-centet flex cursor-pointer justify-center"
