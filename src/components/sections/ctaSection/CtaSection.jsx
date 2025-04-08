@@ -6,7 +6,7 @@ const CtaSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/careerbg.jpg')",
+          backgroundImage: "url('/ctaImages/careerbg.jpg')",
           opacity: 0.1,
           backgroundAttachment: "fixed",
         }}
@@ -19,7 +19,7 @@ const CtaSection = () => {
           height="500"
           decoding="async"
           style={{ color: "transparent" }}
-          src="/public/plan.svg"
+          src="/ctaImages/plan.svg"
         />
       </div>
       <div className="relative z-10">
