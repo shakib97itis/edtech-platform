@@ -1,11 +1,12 @@
 const CardComponent = () => {
   return (
-    <div className="hover:shadow-primary-200 relative cursor-pointer rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 hover:bg-white hover:shadow-md">
-      <div className="absolute inset-x-0 top-0 mx-auto flex h-28 w-28 -translate-y-1/2 transform items-center justify-center rounded-full border-8 border-sky-800 shadow-lg shadow-white">
+    <div className="hover:shadow-primary-200 relative mt-14 cursor-pointer rounded-[24px] bg-white p-[32px] shadow-lg transition-all duration-300 hover:shadow-md">
+      <div className="absolute top-0 left-1/2 flex h-28 w-28 -translate-1/2 transform items-center justify-center rounded-full border-8 border-sky-800 shadow-lg shadow-white">
         <div className="bg-primary-800 flex h-24 w-24 items-center justify-center rounded-full border-2 border-white p-4">
           <MySVG />
         </div>
       </div>
+
       <div className="pt-14">
         <h5 className="font-ubuntu text-xl font-medium">
           Master In-Demand Digital Skills to Advance Your Career

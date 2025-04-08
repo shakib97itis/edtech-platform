@@ -1,28 +1,32 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import HeroBanner1 from "./HeroBanner1";
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 const HeroSlider = () => {
   return (
     <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Autoplay]}
       spaceBetween={0}
       slidesPerView={1}
-      scrollbar={{ draggable: true }}
+      grabCursor={true}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,
       }}
       loop={true}
-      className="bg-primary-700 h-[600px] w-full"
+      className=""
     >
-      <SwiperSlide className="h-full">
+      <SwiperSlide>
+        <HeroBanner1 />
+      </SwiperSlide>
+      <SwiperSlide className="">
+        <HeroBanner1 />
+      </SwiperSlide>
+      <SwiperSlide className="">
         <HeroBanner1 />
       </SwiperSlide>
     </Swiper>
