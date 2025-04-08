@@ -5,7 +5,7 @@ const CardComponent = () => {
         <div className="bg-primary-800 flex h-24 w-24 items-center justify-center rounded-full border-2 border-white p-4">
           <img
             className="h-full w-full object-cover"
-            src="/public/heroImages/hero-card-1.png"
+            src="/public/heroImages/hero-card-3.png"
             alt="HeroCard1"
           />
         </div>

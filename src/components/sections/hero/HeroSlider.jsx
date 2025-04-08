@@ -2,6 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import HeroBanner1 from "./HeroBanner1";
+import HeroBanner2 from "./HeroBanner2";
+import HeroBanner3 from "./HeroBanner3";
 
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -9,7 +11,7 @@ import "swiper/css/autoplay";
 const HeroSlider = () => {
   return (
     <Swiper
-      modules={[Autoplay]}
+      
       spaceBetween={0}
       slidesPerView={1}
       grabCursor={true}
@@ -24,10 +26,10 @@ const HeroSlider = () => {
         <HeroBanner1 />
       </SwiperSlide>
       <SwiperSlide className="">
-        <HeroBanner1 />
+        <HeroBanner2 />
       </SwiperSlide>
       <SwiperSlide className="">
-        <HeroBanner1 />
+        <HeroBanner3 />
       </SwiperSlide>
     </Swiper>
   );

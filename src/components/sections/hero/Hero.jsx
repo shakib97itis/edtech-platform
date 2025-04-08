@@ -1,6 +1,8 @@
 import React from "react";
 import HeroSlider from "./HeroSlider";
 import HeroCard1 from "./HeroCard1";
+import HeroCard2 from "./HeroCard2";
+import HeroCard3 from "./HeroCard3";
 
 function Hero() {
   return (
@@ -18,8 +20,8 @@ function Hero() {
       <section className="relative -translate-y-[200px] mb-[-200px]">
         <div className="container mx-auto grid gap-[16px] px-[16px] md:grid-cols-2 md:px-[40px] lg:grid-cols-3">
           <HeroCard1 />
-          <HeroCard1 />
-          <HeroCard1 />
+          <HeroCard2 />
+          <HeroCard3 />
         </div>
       </section>
     </>

@@ -11,14 +11,8 @@ const Banner = () => {
         <h3 className="mb-[8px] text-sm text-white uppercase opacity-90">
           Elevating
         </h3>
-        <h1 className="font-secondary max-w-[500px] mb-[16px] text-[32px] leading-tight font-semibold text-white sm:text-[36px] md:text-[46px]">
-          IT Service Industry <br /> with{" "}
-          <span className="relative inline-block">
-            Digital Skills
-            <span className="absolute bottom-0 left-0 h-[4px] w-full bg-orange-400"></span>
-          </span>
-          <br />
-          Development
+        <h1 className="font-secondary mb-[16px] max-w-[500px] text-[32px] leading-tight font-semibold text-white sm:text-[36px] md:text-[46px]">
+          We aim to eliminate unemployment in Bangladesh
         </h1>
 
         <p className="mb-[24px] max-w-[800px] text-base text-white opacity-90 md:text-lg">
@@ -48,9 +42,9 @@ const Banner = () => {
       {/* Image Section */}
       <div className="hidden w-2/5 shrink-0 lg:block">
         <img
-          src="/heroImages/programs-banner-1.jpg"
+          src="/heroImages/programs-banner-3.svg"
           alt="Digital Skills Illustration"
-         className="h-[400px] w-[400px] object-contain"
+          className="h-[400px] w-[400px] object-contain"
         />
       </div>
     </div>
