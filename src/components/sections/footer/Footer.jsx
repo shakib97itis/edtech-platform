@@ -38,8 +38,7 @@ const Footer = () => {
                 <a
                   key={href}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  href={href}
+                  src={href}
                   className={`flex h-10 w-10 items-center justify-center rounded-full bg-white p-2 text-black hover:bg-${hoverColor} transition duration-500 hover:text-white`}
                 >
                   {icon}
