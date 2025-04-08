@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../common/button/Button";
-import HeadingSecondary from "../../common/headings/HeadingSecondary";
+import HeadingSecondary from "../../common/headings/HeadingSecondaryCenter";
 import { FaArrowCircleRight } from "react-icons/fa";
 function WhatWeDo() {
   return (
