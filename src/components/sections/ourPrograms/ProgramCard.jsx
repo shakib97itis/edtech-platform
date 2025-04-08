@@ -1,10 +1,9 @@
 import React from "react";
-import { LuStar } from "react-icons/lu";
 import { FaArrowCircleRight } from "react-icons/fa";
-import img from "../../../assets/Course1.png";
 import Button from "../../common/button/Button";
+import Rating from "./Rating";
 
-const ProgramCard = () => {
+const ProgramCard = ({ img, title, price, rating, ratingCount }) => {
   return (
     <div className="w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 shadow-lg">
       {/* Image Section */}
@@ -19,36 +18,31 @@ const ProgramCard = () => {
       {/* Content Section */}
       <div className="p-[16px]">
         <h3 className="mb-[16px] text-lg font-semibold text-gray-900">
-          IT Support Specialist
+          {title}
         </h3>
 
         <div className="mb-[20px] flex items-center justify-between">
           {/* Rating */}
-          <div className="flex items-center">
-            {[...Array(5)].map((_, index) => (
-              <LuStar
-                key={index}
-                size={16}
-                className="text-yellow-500"
-                fill="currentColor"
-              />
-            ))}
-            <span className="ml-[10px] text-sm text-gray-600">5.00 (225)</span>
-          </div>
+          <Rating rating={rating} ratingCount={ratingCount} />
+
           {/* Price */}
-          <p className="text-sm text-gray-700">৳ 25,000/-</p>
+          <p className="text-sm text-gray-700">৳ {price}/-</p>
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center justify-between">
-          <Button variant="btnFive" text="Read Details" className="px-[10px] py-[5px]">
+        <div className="flex flex-col items-center justify-between gap-[20px] sm:w-auto sm:flex-row sm:gap-[8px] md:flex-col md:gap-[20px] xl:flex-row xl:gap-[8px]">
+          <Button
+            variant="btnFour"
+            text="Read Details"
+            className="w-full px-[10px] py-[5px] text-sm"
+          >
             <FaArrowCircleRight />
           </Button>
 
           <Button
             variant="btnThree"
             text="Enroll Now"
-            className="px-[30px] py-[8px]"
+            className="w-full px-[30px] py-[8px] text-sm"
           ></Button>
         </div>
       </div>
