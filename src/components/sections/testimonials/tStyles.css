@@ -1,0 +1,10 @@
+.testimonials-swiper .swiper-slide {
+  transition: transform 0.4s ease;
+  transform: scale(0.8); /* Scale down the slides */
+  z-index: 1; /* Set a lower z-index for non-active slides */
+}
+
+.testimonials-swiper .swiper-slide-active {
+  transform: scale(1.1); /* Zoom in the centered slide */
+  z-index: 10;
+}
