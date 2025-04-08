@@ -1,5 +1,4 @@
 import React from "react";
-import lnewsImg from "../../../assets/lnews.cbfeea1c.png";
 import HeadingSecondaryLeft from "../../common/headings/HeadingSecondaryLeft";
 import Button from "../../common/button/Button";
 import { FaArrowCircleRight } from "react-icons/fa";
@@ -22,7 +21,7 @@ const LatestNews = () => {
               decoding="async"
               className="h-full w-full object-cover"
               style={{ color: "transparent" }}
-              src={lnewsImg}
+              src="/latestNewsImages/latest-news.png"
             />
           </div>
 

@@ -26,11 +26,12 @@ const Home = () => {
       <WhatWeDo />
 
       {/* HOW DOES IT WORKS SECTION */}
-      <HowDoesItWork />
+      <HowDoesItWork /> {/* Skipped */}
 
       {/* OUR PROGRAMS */}
       <OurPrograms />
 
+  {/* Working on it */}
       {/* COMMUNITY SECTION */}
       <Community />
 

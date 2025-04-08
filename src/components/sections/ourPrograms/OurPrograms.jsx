@@ -48,6 +48,7 @@ function OurPrograms() {
       ratingCount: 20,
     },
   ];
+  
   return (
     <section className="py-[130px]">
       <div className="container mx-auto px-[16px] md:px-[40px]">

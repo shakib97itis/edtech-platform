@@ -1,5 +1,4 @@
 import React from "react";
-import planSvg from "../../../assets/plan.e12f769b.svg";
 
 const CtaSection = () => {
   return (
@@ -20,7 +19,7 @@ const CtaSection = () => {
           height="500"
           decoding="async"
           style={{ color: "transparent" }}
-          src={planSvg}
+          src="/public/plan.svg"
         />
       </div>
       <div className="relative z-10">

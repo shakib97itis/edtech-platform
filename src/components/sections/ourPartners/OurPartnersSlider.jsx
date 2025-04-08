@@ -4,7 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import OurPartnersSlide from "./OurPartnersSlide";
 import { useState } from "react";
 
-const OurPartnersSlider = ({ nextRef, prevRef }) => {
+const OurPartnersSlider = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = [
@@ -36,21 +36,11 @@ const OurPartnersSlider = ({ nextRef, prevRef }) => {
 
         <Swiper
           key={activeCategory} // Force re-render when category changes
-          modules={[Navigation, Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={3}
           loop={true}
           autoplay={{ delay: 1000, disableOnInteraction: true }}
-          navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => {}}
-          onInit={(swiper) => {
-            // Attach custom buttons
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
         >
           {filteredSlides.map((slide) => (
             <SwiperSlide key={slide.id}>
@@ -68,121 +58,121 @@ export default OurPartnersSlider;
 const allSlides = [
   {
     id: 1,
-    imgLink: "/public/ibm-logo.png",
+    imgLink: "/public/ourPartnersImages/ibm-logo.png",
     alt: "IBM",
     category: "Technology Partners",
   },
   {
     id: 2,
-    imgLink: "/public/digital-ocean-logo.png",
+    imgLink: "/public/ourPartnersImages/digital-ocean-logo.png",
     alt: "Digital Ocean",
     category: "Branding Partners",
   },
   {
     id: 3,
-    imgLink: "/public/hostinger-logo.png",
+    imgLink: "/public/ourPartnersImages/hostinger-logo.png",
     alt: "Hostinger",
     category: "Training Partners",
   },
   {
     id: 4,
-    imgLink: "/public/microsoft-logo.webp",
+    imgLink: "/public/ourPartnersImages/microsoft-logo.webp",
     alt: "Microsoft",
     category: "Banking Partners",
   },
   {
     id: 5,
-    imgLink: "/public/ibm-logo.png",
+    imgLink: "/public/ourPartnersImages/ibm-logo.png",
     alt: "IBM",
     category: "Technology Partners",
   },
   {
     id: 6,
-    imgLink: "/public/digital-ocean-logo.png",
+    imgLink: "/public/ourPartnersImages/digital-ocean-logo.png",
     alt: "Digital Ocean",
     category: "Branding Partners",
   },
   {
     id: 7,
-    imgLink: "/public/hostinger-logo.png",
+    imgLink: "/public/ourPartnersImages/hostinger-logo.png",
     alt: "Hostinger",
     category: "Training Partners",
   },
   {
     id: 8,
-    imgLink: "/public/microsoft-logo.webp",
+    imgLink: "/public/ourPartnersImages/microsoft-logo.webp",
     alt: "Microsoft",
     category: "Banking Partners",
   },
   {
     id: 9,
-    imgLink: "/public/ibm-logo.png",
+    imgLink: "/public/ourPartnersImages/ibm-logo.png",
     alt: "IBM",
     category: "Technology Partners",
   },
   {
     id: 10,
-    imgLink: "/public/digital-ocean-logo.png",
+    imgLink: "/public/ourPartnersImages/digital-ocean-logo.png",
     alt: "Digital Ocean",
     category: "Branding Partners",
   },
   {
     id: 11,
-    imgLink: "/public/hostinger-logo.png",
+    imgLink: "/public/ourPartnersImages/hostinger-logo.png",
     alt: "Hostinger",
     category: "Training Partners",
   },
   {
     id: 12,
-    imgLink: "/public/microsoft-logo.webp",
+    imgLink: "/public/ourPartnersImages/microsoft-logo.webp",
     alt: "Microsoft",
     category: "Banking Partners",
   },
   {
     id: 13,
-    imgLink: "/public/ibm-logo.png",
+    imgLink: "/public/ourPartnersImages/ibm-logo.png",
     alt: "IBM",
     category: "Technology Partners",
   },
   {
     id: 14,
-    imgLink: "/public/digital-ocean-logo.png",
+    imgLink: "/public/ourPartnersImages/digital-ocean-logo.png",
     alt: "Digital Ocean",
     category: "Branding Partners",
   },
   {
     id: 15,
-    imgLink: "/public/hostinger-logo.png",
+    imgLink: "/public/ourPartnersImages/hostinger-logo.png",
     alt: "Hostinger",
     category: "Training Partners",
   },
   {
     id: 16,
-    imgLink: "/public/microsoft-logo.webp",
+    imgLink: "/public/ourPartnersImages/microsoft-logo.webp",
     alt: "Microsoft",
     category: "Banking Partners",
   },
   {
     id: 17,
-    imgLink: "/public/ibm-logo.png",
+    imgLink: "/public/ourPartnersImages/ibm-logo.png",
     alt: "IBM",
     category: "Technology Partners",
   },
   {
     id: 18,
-    imgLink: "/public/digital-ocean-logo.png",
+    imgLink: "/public/ourPartnersImages/digital-ocean-logo.png",
     alt: "Digital Ocean",
     category: "Branding Partners",
   },
   {
     id: 19,
-    imgLink: "/public/hostinger-logo.png",
+    imgLink: "/public/ourPartnersImages/hostinger-logo.png",
     alt: "Hostinger",
     category: "Training Partners",
   },
   {
     id: 20,
-    imgLink: "/public/microsoft-logo.webp",
+    imgLink: "/public/ourPartnersImages/microsoft-logo.webp",
     alt: "Microsoft",
     category: "Banking Partners",
   },

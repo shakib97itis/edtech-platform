@@ -43,7 +43,7 @@ function WhatWeDo() {
           {/* CONTENT RIGHT */}
           <div className="w-full lg:w-[60%]">
             <img
-              src="/what-we-do.png"
+              src="/whatWeDoImages/what-we-do.png"
               alt="What We Do"
               className="h-full w-full object-cover"
             />

@@ -94,19 +94,16 @@ src/
 - [x] Refactor Navigation component.
 - [x] Refactor Hero section component.
 - [x] Refactor WhatWeDo component.
+- [ Leave It ] Refactor HowItWorks component.
+- [x] Refactor OurPrograms component.
+- [x] Refactor Community component.
+- [x] Refactor LatestNews component.
+- [x] Refactor CTA component.
+- [x] Refactor Footer component.
 
-- [ ] Refactor HowItWorks component.
-- [ ] Refactor OurPrograms component.
-- [ ] Refactor Community component.
-- [ ] Refactor FeaturedNews component.
-- [ ] Refactor CTA component.
-- [] Refactor Footer component.
-
-- [] Build Partners component.
-- [ ] Build Testimonials component.
-- [ ] Build LatestNews component.
-
-- [ ] Refactor Heading component.
+- [x] Build Our Partners component.
+- [x] Build Testimonials component.
+- [x] Build FeaturedNews component.
 
 - [ ] Card animation implementation
 - [ ] Scroll reveal animations

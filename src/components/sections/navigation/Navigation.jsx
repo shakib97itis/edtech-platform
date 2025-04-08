@@ -38,7 +38,7 @@ function Navigation() {
 
             {/* LOGO */}
             <div className="w-[120px] lg:w-[150px]">
-              <img src="/logo-main.png" alt="Logo" className="full" />
+              <img src="/navigationImages/main-logo.png" alt="Logo" className="full" />
             </div>
           </div>
 
@@ -70,7 +70,7 @@ function Navigation() {
           >
             <div className="flex items-center justify-between border-b border-b-neutral-100 p-4">
               <div className="">
-                <img src="/logo-main.png" alt="Logo" className="w-32" />
+                <img src="/public/navigationImages/main-logo.png" alt="Logo" className="w-32" />
               </div>
               <div
                 className="items-centet flex cursor-pointer justify-center"

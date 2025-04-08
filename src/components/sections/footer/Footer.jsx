@@ -8,8 +8,6 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import logo from "../../../assets/Footer_logo.png";
-
 const Footer = () => {
   return (
     <footer>
@@ -17,7 +15,7 @@ const Footer = () => {
         <div
           className="absolute inset-0 z-0 bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/FooterMaps.svg)",
+            backgroundImage: "url(/footerImages/footer-maps.svg)",
             opacity: 0.1,
           }}
         ></div>
@@ -25,7 +23,11 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="">
             <a href="/">
-              <img alt="BULIPE Logo" className="mb-5 w-1/2" src={logo} />
+              <img
+                alt="BULIPE Logo"
+                className="mb-5 w-1/2"
+                src="/footerImages/footer_logo.png"
+              />
             </a>
             <p className="font-ubuntu text-sm">
               Bulipe Tech as a visionary agent collaborates with its parent
@@ -34,16 +36,21 @@ const Footer = () => {
               Bangladesh.
             </p>
             <div className="mt-5 flex gap-3">
-              {socialLinks.map(({ href, icon, hoverColor }) => (
-                <a
-                  key={href}
-                  target="_blank"
-                  src={href}
-                  className={`flex h-10 w-10 items-center justify-center rounded-full bg-white p-2 text-black hover:bg-${hoverColor} transition duration-500 hover:text-white`}
-                >
-                  {icon}
-                </a>
-              ))}
+              {socialLinks.map(
+                ({ href, icon, hoverColor }) => (
+                  console.log(href, icon, hoverColor),
+                  (
+                    <a
+                      key={href}
+                      target="_blank"
+                      src={href}
+                      className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white p-2 text-black transition duration-500 hover:text-white hover:${hoverColor}`}
+                    >
+                      {icon}
+                    </a>
+                  )
+                ),
+              )}
             </div>
           </div>
 
@@ -86,7 +93,7 @@ const Footer = () => {
           <div className="mt-10 md:ml-10 lg:mt-3">
             <h6 className="text-lg font-medium">QUICK LINKS</h6>
             <div className="my-2 h-0.5 w-10 bg-orange-500"></div>
-            <ul className="mt-5 space-y-3 text-accent-500">
+            <ul className="text-accent-500 mt-5 space-y-3">
               {quickLinks.map(({ href, label }) => (
                 <li key={label} className="flex items-center gap-2">
                   <FaArrowRight />
@@ -160,27 +167,27 @@ const socialLinks = [
   {
     href: "https://www.linkedin.com/in/bulipetech/",
     icon: <FaLinkedin />,
-    hoverColor: "blue-700",
+    hoverColor: "bg-blue-600",
   },
   {
     href: "https://x.com/bulipetech",
     icon: <FaTwitter />,
-    hoverColor: "black",
+    hoverColor: "bg-black",
   },
   {
     href: "https://www.facebook.com/bulipetechbd/",
     icon: <FaFacebook />,
-    hoverColor: "blue-600",
+    hoverColor: "bg-blue-600",
   },
   {
     href: "https://www.pinterest.com/bulipetech/",
     icon: <FaPinterest />,
-    hoverColor: "red-600",
+    hoverColor: "bg-red-600",
   },
   {
     href: "https://www.youtube.com/@bulipetech",
     icon: <FaYoutube />,
-    hoverColor: "red-600",
+    hoverColor: "bg-red-600",
   },
 ];
 
