@@ -6,7 +6,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 const LatestNews = () => {
   return (
-    <section className="py-[60px] md:py-[130px]">
+    <section className="pt-[60px] md:pt-[130px]">
       <div className="container mx-auto px-[16px] md:px-[40px]">
         <div className="mb-[50px]">
           <HeadingSecondaryLeft>Latest News</HeadingSecondaryLeft>

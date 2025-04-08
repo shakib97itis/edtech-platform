@@ -7,8 +7,10 @@
   --color-primary-200: #2fb8e9;
   --color-primary-300: #36bbe4;
   --color-primary-400: #0786c0;
+  --color-primary-500: #014365;
   --color-primary-700: #014463;
   --color-primary-800: #004464;
+
 
   --color-secondary-200: #b0c5cf;
   --color-secondary-300: #a6e2e2;
@@ -22,8 +24,10 @@
   --color-neutral-100: #e5e7eb;
   --color-neutral-200: #cccccc;
   --color-neutral-300: #c1c1c1;
+  --color-neutral-350: #dedede;
   --color-neutral-500: #6b7280;
   --color-neutral-600: #4b5563;
+  --color-neutral-650: #848484;
   --color-neutral-700: #374151;
   --color-neutral-800: #242424;
   --color-neutral-900: #111827;
